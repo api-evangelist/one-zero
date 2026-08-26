@@ -64,5 +64,17 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-OneZero is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.hiive.com/securities/one-zero-stock
+ONE ZERO Digital Bank Ltd. is Israel's first newly licensed bank in more than four decades - a
+branchless, mobile-first digital bank founded in 2019 by Prof. Amnon Shashua and led by CEO Gal Bar
+Dea, licensed by the Bank of Israel and open to the public since 2022. It markets AI-assisted
+"private banking for everyone": current accounts, deposits, consumer credit, multi-currency and FX,
+and investment products, delivered through the ONE ZERO mobile app.
+
+- Website: https://www.onezerobank.com/
+- Open Banking APIs developer page: https://www.onezerobank.com/lp/one_zero_dev_portal/
+- Secondary-market listing: https://www.hiive.com/securities/one-zero-stock
+
+**Coverage note.** As of 2026-08-26 every request to `www.onezerobank.com` - including the developer
+page above and a random control path - answers HTTP 403 with `cf-mitigated: challenge`. No ONE ZERO
+published contract, `/.well-known/` document or `llms.txt` could be read or ruled out from here.
+

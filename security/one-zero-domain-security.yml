@@ -1,0 +1,23 @@
+generated: '2026-08-26'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.onezerobank.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Nov 13 01:59:20 2026 GMT
+  hsts: true
+  hsts_max_age: 15552000
+  hsts_header: max-age=15552000; includeSubDomains; preload
+  note: 'Origin is behind a Cloudflare managed challenge (HTTP 403, cf-mitigated: challenge) for non-browser
+    clients; the HSTS header was read from that challenge response, which is served by the same edge.'
+domains:
+- domain: onezerobank.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
+note: 'Every HTTP probe against www.onezerobank.com answers 403 with cf-mitigated: challenge. TLS, DNSSEC,
+  CAA, SPF and DMARC results are unaffected by that challenge; HTTP-body-dependent checks are not observable
+  from this vantage point.'

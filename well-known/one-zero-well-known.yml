@@ -1,0 +1,38 @@
+generated: '2026-08-26'
+method: probed
+source: https://www.onezerobank.com/.well-known/ (live probes, 2026-08-26)
+hit_count: 0
+hosts:
+- host: https://www.onezerobank.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 403
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 403
+    file: null
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    file: null
+soft_404_control:
+  path: /.well-known/api-evangelist-control-<random>
+  status: 403
+  bytes: 5836
+  note: A random non-existent path returns the same Cloudflare interstitial as every real
+    path, so no status from this host distinguishes present from absent.
+note: >-
+  Nothing was saved and NO WellKnown or SecurityTxt pointer is emitted. Every request to
+  www.onezerobank.com - including a random control path - answers HTTP 403 with the response
+  header `cf-mitigated: challenge` and a 5.7KB Cloudflare "Just a moment..." interstitial.
+  These are NOT recorded absences: the host never told us whether these documents exist. The
+  Internet Archive is refused the same way (Wayback CDX shows 403 for onezerobank.com /lp/
+  captures), so no archived copy is available either. Re-probe from a browser-capable client.

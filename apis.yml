@@ -1,16 +1,33 @@
 aid: one-zero
-name: OneZero
-description: 'OneZero is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: ONE ZERO Digital Bank
+description: 'ONE ZERO Digital Bank Ltd. is Israel''s first newly licensed bank in more
+  than four decades - a branchless, mobile-first digital bank founded in 2019 by Prof.
+  Amnon Shashua (co-founder of Mobileye), chaired by Shuki Oren and led by CEO Gal Bar
+  Dea, which received its banking licence from the Bank of Israel and opened to the public
+  in 2022. It markets AI-assisted "private banking for everyone": current accounts, deposits,
+  consumer credit, multi-currency and foreign-exchange services and investment products,
+  delivered through the ONE ZERO mobile app with a mix of an AI personal banker and human
+  bankers. The bank has raised roughly $342M in private capital, most recently a $100M
+  later-stage round in October 2023, and its shares change hands on private secondary
+  marketplaces including Hiive and Nasdaq Private Market. ONE ZERO publishes an Open Banking
+  APIs developer landing page, consistent with Israel''s Financial Information Service Law,
+  5781-2021, under which access to bank account APIs is granted to regulator-licensed
+  financial information service providers rather than to the general public.'
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/one-zero/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-26'
 modified: '2026-08-26'
 tags:
+- Banking
+- Financial Services
+- Fintech
+- Digital Bank
+- Open Banking
+- Consumer Finance
+- Israel
 - Company
 apis: []
 maintainers:
@@ -19,5 +36,39 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: LLMsTxt
+  url: llms/one-zero-llms.txt
+- type: DomainSecurity
+  url: security/one-zero-domain-security.yml
 - type: Website
+  url: https://www.onezerobank.com/
+- type: DeveloperPortal
+  url: https://www.onezerobank.com/lp/one_zero_dev_portal/
+- type: Blog
+  url: https://www.onezerobank.com/blog
+- type: SecondaryMarketListing
   url: https://www.hiive.com/securities/one-zero-stock
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: blocked
+  reason: bot-challenge
+  detail: >-
+    Every request to www.onezerobank.com - the company's only reachable host, including its
+    "Open Banking APIs" developer page at /lp/one_zero_dev_portal/ and a random control path -
+    answers HTTP 403 with `cf-mitigated: challenge` and a Cloudflare interstitial, and the
+    Internet Archive is refused the same way, so no ONE ZERO-published document could be read
+    or ruled out from this vantage point.
+  evidence:
+  - url: https://www.onezerobank.com/lp/one_zero_dev_portal/
+    status: 403
+  - url: https://www.onezerobank.com/.well-known/security.txt
+    status: 403
+  - url: https://www.onezerobank.com/.well-known/api-evangelist-control-random
+    status: 403
+  - url: https://www.hiive.com/securities/one-zero-stock
+    status: 200
+  checked: '2026-08-26'

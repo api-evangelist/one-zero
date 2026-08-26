@@ -1,0 +1,37 @@
+# ONE ZERO Digital Bank
+
+> ONE ZERO Digital Bank Ltd. is Israel's first newly licensed bank in more than four decades:
+> a branchless, mobile-first digital bank founded in 2019 by Prof. Amnon Shashua and led by
+> CEO Gal Bar Dea, licensed by the Bank of Israel and open to the public since 2022. It offers
+> AI-assisted "private banking for everyone" - current accounts, deposits, consumer credit,
+> multi-currency and FX, and investment products - through the ONE ZERO mobile app.
+
+## Status of the public API surface
+
+- ONE ZERO publishes an **Open Banking APIs** developer landing page at
+  https://www.onezerobank.com/lp/one_zero_dev_portal/
+- No OpenAPI, Swagger, AsyncAPI, GraphQL SDL, MCP server, A2A agent card, `llms.txt`,
+  `security.txt` or any other `/.well-known/` document could be retrieved from
+  `www.onezerobank.com` on 2026-08-26. Every request - including a random control path -
+  answered HTTP 403 with `cf-mitigated: challenge`, so their presence or absence is
+  **unknown**, not disproven.
+- Israel's Financial Information Service Law, 5781-2021 governs access to Israeli bank
+  account APIs: consumption is licensed to registered financial information service
+  providers, not offered as open self-serve developer signup.
+- There is no ONE ZERO GitHub organization (`github.com/onezerobank`, `one-zero-bank`,
+  `onezero-bank` all 404) and no first-party client library on npm or PyPI.
+
+## Company
+
+- Website: https://www.onezerobank.com/
+- Open Banking APIs developer page: https://www.onezerobank.com/lp/one_zero_dev_portal/
+- Blog: https://www.onezerobank.com/blog
+- About: https://www.onezerobank.com/about/
+- Careers: https://www.onezerobank.com/career/
+- Secondary-market listing: https://www.hiive.com/securities/one-zero-stock
+
+## This profile
+
+- Independent third-party profile maintained by API Evangelist. Not operated by ONE ZERO.
+- Machine-readable index: apis.yml in this repository.
+- Corrections and re-scores: https://github.com/api-evangelist/one-zero/issues
