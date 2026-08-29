@@ -13,6 +13,17 @@ description: 'ONE ZERO Digital Bank Ltd. is Israel''s first newly licensed bank 
   APIs developer landing page, consistent with Israel''s Financial Information Service Law,
   5781-2021, under which access to bank account APIs is granted to regulator-licensed
   financial information service providers rather than to the general public.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/one-zero/refs/heads/main/apis.yml
 x-type: company
