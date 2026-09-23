@@ -77,4 +77,3 @@ and investment products, delivered through the ONE ZERO mobile app.
 **Coverage note.** As of 2026-08-26 every request to `www.onezerobank.com` - including the developer
 page above and a random control path - answers HTTP 403 with `cf-mitigated: challenge`. No ONE ZERO
 published contract, `/.well-known/` document or `llms.txt` could be read or ruled out from here.
-
