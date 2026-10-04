@@ -45,7 +45,7 @@ created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Banking
-- Financial-Services
+- Financial Services
 - Fintech
 - Digital Bank
 - Open Banking
@@ -61,6 +61,7 @@ tags_raw:
 - Consumer Finance
 - Israel
 - Company
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
