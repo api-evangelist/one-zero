@@ -1,4 +1,4 @@
-# OneZero
+# ONE ZERO Digital Bank
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,16 +64,80 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-ONE ZERO Digital Bank Ltd. is Israel's first newly licensed bank in more than four decades - a
-branchless, mobile-first digital bank founded in 2019 by Prof. Amnon Shashua and led by CEO Gal Bar
-Dea, licensed by the Bank of Israel and open to the public since 2022. It markets AI-assisted
-"private banking for everyone": current accounts, deposits, consumer credit, multi-currency and FX,
-and investment products, delivered through the ONE ZERO mobile app.
+ONE ZERO Digital Bank Ltd. is Israel's first newly licensed bank in more than four decades - a branchless, mobile-first digital bank founded in 2019 by Prof. Amnon Shashua (co-founder of Mobileye), chaired by Shuki Oren and led by CEO Gal Bar Dea, which received its banking licence from the Bank of Israel and opened to the public in 2022. It markets AI-assisted "private banking for everyone": current accounts, deposits, consumer credit, multi-currency and foreign-exchange services and investment products, delivered through the ONE ZERO mobile app with a mix of an AI personal banker and human bankers. The bank has raised roughly $342M in private capital, most recently a $100M later-stage round in October 2023, and its shares change hands on private secondary marketplaces including Hiive and Nasdaq Private Market. ONE ZERO publishes an Open Banking APIs developer landing page, consistent with Israel's Financial Information Service Law, 5781-2021, under which access to bank account APIs is granted to regulator-licensed financial information service providers rather than to the general public.
 
-- Website: https://www.onezerobank.com/
-- Open Banking APIs developer page: https://www.onezerobank.com/lp/one_zero_dev_portal/
-- Secondary-market listing: https://www.hiive.com/securities/one-zero-stock
+**Areas:** Banking · Financial Services · Fintech · Digital Bank · Open Banking · Consumer Finance · Israel · Company
 
-**Coverage note.** As of 2026-08-26 every request to `www.onezerobank.com` - including the developer
-page above and a random control path - answers HTTP 403 with `cf-mitigated: challenge`. No ONE ZERO
-published contract, `/.well-known/` document or `llms.txt` could be read or ruled out from here.
+## ONE ZERO Digital Bank on APIs.io
+
+Everything profiled for ONE ZERO Digital Bank is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/one-zero/](https://apis.io/providers/one-zero/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [One Zero Domain Security](https://apis.io/security/one-zero/one-zero-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.onezerobank.com/)
+- [Blog](https://www.onezerobank.com/blog)
+
+## API Evangelist rating
+
+**Kin Score 5.6** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/one-zero/](https://apis.io/providers/one-zero/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for ONE ZERO Digital Bank: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/one-zero/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
